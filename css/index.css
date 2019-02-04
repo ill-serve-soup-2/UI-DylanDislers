@@ -17,12 +17,12 @@
   padding: 2rem 3rem;
   margin-bottom: 3rem;
 }
-@keyframes hoverChangeDarker {
+@keyframes bgChangeDarker {
   to {
     background-color: #2e3842;
   }
 }
-@keyframes hoverChangeLighter {
+@keyframes bgChangeLighter {
   to {
     background-color: #f38879;
   }
@@ -215,13 +215,6 @@ html {
   vertical-align: text-bottom;
   width: 3rem;
 }
-#header .navMenu {
-  display: none;
-}
-#header .navMenu li {
-  margin: 2rem 1rem;
-  padding: 0.5rem;
-}
 #header a {
   text-decoration: none;
   color: #000;
@@ -233,9 +226,16 @@ html {
 }
 #header a:hover {
   border-radius: 3px;
-  animation-name: hoverChangeDarker;
+  animation-name: bgChangeDarker;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+}
+.navMenu {
+  display: none;
+}
+.navMenu li {
+  margin: 2rem 1rem;
+  padding: 0.5rem;
 }
 .reveal {
   display: block;
@@ -294,7 +294,7 @@ html {
   font-family: Open Sans, Arial, Helvetica;
 }
 #banner .button:hover {
-  animation-name: hoverChangeLighter;
+  animation-name: bgChangeLighter;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }

@@ -45,13 +45,6 @@
     }
   }
 
-  .navMenu {
-    display: none;
-    li {
-      margin: 2rem 1rem;
-      padding: .5rem;
-      }
-    }
     a {
     .textNormalize;
     font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -61,12 +54,20 @@
     color: @mainWhite;
     &:hover {
       border-radius: 3px;
-      animation-name: hoverChangeDarker;
+      animation-name: bgChangeDarker;
       animation-duration: .5s;
       animation-fill-mode: forwards;
     }
   }
 }
+
+.navMenu {
+  display: none;
+  li {
+    margin: 2rem 1rem;
+    padding: .5rem;
+    }
+  }
 
 .reveal {
   display: block;
