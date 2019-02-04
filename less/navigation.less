@@ -1,12 +1,4 @@
-@keyframes hoverChange1 {
-  from {}
-  to {
-    background-color: @dark;
-  }
-}
-
-
-header {
+#header {
   width: 100%;
   position: fixed;
   .customFlex(space-between, flex-start, row);
@@ -69,7 +61,7 @@ header {
     color: @mainWhite;
     &:hover {
       border-radius: 3px;
-      animation-name: hoverChange1;
+      animation-name: hoverChangeDarker;
       animation-duration: .5s;
       animation-fill-mode: forwards;
     }

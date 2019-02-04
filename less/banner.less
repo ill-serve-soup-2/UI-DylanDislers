@@ -1,0 +1,90 @@
+#banner {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.5)), url(/img/produce2.jpeg);
+  background-position: center;
+  background-size: cover;
+  .customFlex(space-around, center, column);
+
+  .inner {
+    .customFlex(space-between, center, column);
+  }
+
+  h2 {
+    color: @mainWhite;
+    font-size: 3rem;
+    font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    border-top: 3px solid @mainWhite;
+    border-bottom: 3px solid @mainWhite;
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    color: @mainWhite;
+    font-size: 2rem;
+    font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 3.6px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .button {
+    .mainButton(@mainRed, @mainWhite);
+    &:hover {
+      animation-name: hoverChangeLighter;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .more {
+    .textNormalize;
+    font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    bottom: 0;
+    font-size: 1rem;
+    height: 8.5em;
+    left: 50%;
+    letter-spacing: 0.225rem;
+    margin-left: -8.5em;
+    opacity: 1;
+    outline: 0;
+    padding-left: 0.225em;
+    position: absolute;
+    text-align: center;
+    width: 16em;
+    z-index: 1;
+    color: @mainWhite;
+    &::after {
+      background-image: url("/img/arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 4em;
+      content: '';
+      display: block;
+      height: 1.5em;
+      left: 50%;
+      margin: 0 0 0 -0.75em;
+      position: absolute;
+      width: 1.5em;
+    }
+    &:hover {
+      animation-name: hoverChangeLighter;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+
+
