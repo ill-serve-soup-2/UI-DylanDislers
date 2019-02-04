@@ -1,0 +1,9 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textNormalize {
+  text-decoration: none;
+  color: #000;
+}
