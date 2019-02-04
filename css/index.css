@@ -141,3 +141,30 @@ table {
 html {
   font-size: 62.5%;
 }
+header {
+  width: 100%;
+  background-color: #65617D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+header h1 {
+  margin: 0 1rem 0 2rem;
+}
+header h1 a {
+  text-decoration: none;
+  color: #000;
+  color: #fcfcfc;
+  font-size: 2rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+header #menu span,
+header a {
+  text-decoration: none;
+  color: #000;
+  color: #fcfcfc;
+}
