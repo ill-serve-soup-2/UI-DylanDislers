@@ -185,6 +185,7 @@ html {
 }
 #header nav {
   margin: 1rem;
+  z-index: 10;
 }
 #header nav .special {
   display: flex;
@@ -215,27 +216,39 @@ html {
   vertical-align: text-bottom;
   width: 3rem;
 }
-#header a {
-  text-decoration: none;
-  color: #000;
-  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 3rem;
-  padding: 1rem;
-  letter-spacing: 2px;
-  color: #fcfcfc;
+.navMenu {
+  display: none;
+  background-color: #EF5E4A;
+  width: 30rem;
 }
-#header a:hover {
+.navMenu li {
+  margin: 1rem auto 2rem auto;
+  padding: 1.5rem;
+  width: 80%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navMenu li:hover {
   border-radius: 3px;
   animation-name: bgChangeDarker;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-.navMenu {
-  display: none;
+.navMenu a {
+  text-decoration: none;
+  color: #000;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.8rem;
+  padding: 1rem;
+  letter-spacing: 2px;
+  color: #fcfcfc;
+  margin: 0 auto;
 }
-.navMenu li {
-  margin: 2rem 1rem;
-  padding: 0.5rem;
+.navMenu .close {
+  cursor: pointer;
+  margin: 1rem;
 }
 .reveal {
   display: block;
@@ -316,7 +329,7 @@ html {
   position: absolute;
   text-align: center;
   width: 16em;
-  z-index: 1;
+  z-index: 0;
   color: #fcfcfc;
 }
 #banner .more::after {
