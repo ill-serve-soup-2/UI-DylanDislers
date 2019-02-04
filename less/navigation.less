@@ -1,10 +1,19 @@
+@keyframes hoverChange1 {
+  from {}
+  to {
+    background-color: @dark;
+  }
+}
+
+
 header {
   width: 100%;
-  background-color: @dark;
-  .customFlex(space-between, center, row);
+  position: fixed;
+  .customFlex(space-between, flex-start, row);
 
   h1 {
-    margin: 0 1rem 0 2rem;
+    opacity: 0;
+    margin: 2rem;
     a {
     .textNormalize;
     color: @mainWhite;
@@ -14,11 +23,60 @@ header {
     letter-spacing: 3.6px;
     text-transform: uppercase;
     }
+
   }
 
-  #menu span, a {
-    .textNormalize;
-    color: @mainWhite;
+  nav {
+    margin: 1rem;
+    .special {
+      .customFlex(space-evenly, flex-start, column)
+    }
   }
+
+  .menuToggle {
+    .customFlex(center, center, row);
+    font-size: 1.6rem;
+    .textNormalize;
+    text-transform: uppercase;
+    font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: @mainWhite;
+    &::after {
+      background-image: url("/img/bars.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+      display: inline-block;
+      height: 3rem;
+      vertical-align: text-bottom;
+      width: 3rem;
+    }
+  }
+
+  .navMenu {
+    display: none;
+    li {
+      margin: 2rem 1rem;
+      padding: .5rem;
+      }
+    }
+    a {
+    .textNormalize;
+    font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 3rem;
+    padding: 1rem;
+    letter-spacing: 2px;
+    color: @mainWhite;
+    &:hover {
+      border-radius: 3px;
+      animation-name: hoverChange1;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+.reveal {
+  display: block;
 }
 
