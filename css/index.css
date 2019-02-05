@@ -190,6 +190,10 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+.wrapper {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
 #header {
   width: 100%;
   position: fixed;
@@ -218,7 +222,7 @@ html {
   z-index: 10;
   position: relative;
 }
-#header nav .special {
+#header nav .navItems {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -253,6 +257,7 @@ html {
   position: absolute;
   right: 1rem;
   top: 0;
+  border: 1px solid #EF5E4A;
   border-radius: 3px;
 }
 .navMenu li {
@@ -270,7 +275,7 @@ html {
 .navMenu li:hover {
   border-radius: 3px;
   animation-name: bgChangeRed;
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
   animation-fill-mode: forwards;
 }
 .navMenu a {

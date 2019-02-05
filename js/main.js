@@ -26,7 +26,7 @@ new MenuToggle(menu);
 
 
 document.addEventListener('scroll', e => {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.querySelector('h1').classList.add('headerReveal')
     document.querySelector('#header').classList.add('headerBgReveal')
   } else {
