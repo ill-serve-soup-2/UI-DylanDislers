@@ -199,7 +199,7 @@ html {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   z-index: 10;
 }
@@ -253,7 +253,7 @@ html {
 }
 .navMenu {
   display: none;
-  z-index: 10;
+  z-index: 100;
   position: absolute;
   right: 1rem;
   top: 0;
@@ -312,7 +312,7 @@ html {
   animation-fill-mode: forwards;
 }
 #banner {
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.5)), url(/img/produce2.jpeg);
@@ -327,9 +327,11 @@ html {
 }
 #banner .inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  margin-top: 6rem;
+  z-index: 2;
 }
 #banner h2 {
   color: #fcfcfc;
@@ -341,7 +343,9 @@ html {
   border-top: 3px solid #fcfcfc;
   border-bottom: 3px solid #fcfcfc;
   padding: 2rem 3rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
+  z-index: 2;
 }
 #banner p {
   color: #fcfcfc;
@@ -352,7 +356,8 @@ html {
   line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  z-index: 2;
 }
 #banner .button {
   padding: 1.5rem 4rem;
@@ -370,6 +375,13 @@ html {
   animation-name: bgChangeLighter;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+  z-index: 2;
+}
+#banner .spacer {
+  height: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
 }
 #banner .more {
   text-decoration: none;
@@ -380,13 +392,10 @@ html {
   bottom: 0;
   font-size: 1.2rem;
   height: 8.5em;
-  left: 50%;
   letter-spacing: 0.225rem;
-  margin-left: -8.5em;
   opacity: 1;
   outline: 0;
   padding-left: 0.225em;
-  position: absolute;
   text-align: center;
   width: 16em;
   z-index: 0;
@@ -401,10 +410,11 @@ html {
   content: '';
   display: block;
   height: 1.5em;
-  left: 50%;
-  margin: 0 0 0 -0.75em;
-  position: absolute;
+  margin: 0.5rem 0 0 -0.75em;
+  position: relative;
   width: 1.5em;
+  left: 50%;
+  top: 1rem;
 }
 #banner .more:hover {
   text-decoration: underline;
