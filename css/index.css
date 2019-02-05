@@ -22,6 +22,11 @@
     background-color: #2e3842;
   }
 }
+@keyframes bgChangeRed {
+  to {
+    background-color: #EF5E4A;
+  }
+}
 @keyframes bgChangeLighter {
   to {
     background-color: #f38879;
@@ -32,8 +37,22 @@
     width: 1px;
   }
   to {
-    background-color: #EF5E4A;
+    background-color: #2e3842;
     width: 20rem;
+  }
+}
+@keyframes h1Reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes headerBgReveal {
+  to {
+    background-color: rgba(43, 40, 40, 0.438);
+    opacity: 1;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -169,6 +188,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 #header {
   width: 100%;
@@ -177,6 +197,7 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
+  z-index: 10;
 }
 #header h1 {
   opacity: 0;
@@ -228,8 +249,10 @@ html {
 }
 .navMenu {
   display: none;
-  background-color: #EF5E4A;
   z-index: 10;
+  position: absolute;
+  right: 1rem;
+  top: 0;
   border-radius: 3px;
 }
 .navMenu li {
@@ -237,7 +260,7 @@ html {
   padding: 1.5rem 1.5rem 2rem 1.5rem;
   width: 80%;
   cursor: pointer;
-  border-bottom: 1px solid #2e3842;
+  border-bottom: 1px solid #EF5E4A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,7 +270,7 @@ html {
 }
 .navMenu li:hover {
   border-radius: 3px;
-  animation-name: bgChangeDarker;
+  animation-name: bgChangeRed;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -275,7 +298,14 @@ html {
   animation-fill-mode: forwards;
 }
 #header .headerReveal {
-  opacity: 1;
+  animation-name: h1Reveal;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.headerBgReveal {
+  animation-name: headerBgReveal;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 #banner {
   z-index: 1;
@@ -420,6 +450,107 @@ html {
   margin: 0 auto;
 }
 .style1 img {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.style2 {
+  width: 100%;
+  background-color: #fcfcfc;
+  color: #EF5E4A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.style2 h2 {
+  color: #fcfcfc;
+  font-size: 3rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+  color: #EF5E4A;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #2e3842;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.style2 p {
+  color: #fcfcfc;
+  font-size: 3rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-align: center;
+  max-width: 60rem;
+  margin: 0 auto;
+  color: #2e3842;
+}
+.style2 .sectionImg {
+  width: 60%;
+  margin: 0 auto;
+}
+.style2 img {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.style3 {
+  width: 100%;
+  background-color: #2e3842;
+  color: #fcfcfc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.style3 h2 {
+  color: #fcfcfc;
+  font-size: 3rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+  color: #EF5E4A;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #FDCEC6;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.style3 p {
+  font-size: 3rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-align: center;
+  max-width: 60rem;
+  margin: 0 auto;
+  color: #fcfcfc;
+}
+.style3 .sectionImg {
+  width: 60%;
+  margin: 0 auto;
+}
+.style3 img {
   width: 100%;
   text-align: center;
   margin: 0 auto;

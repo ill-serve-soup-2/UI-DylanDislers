@@ -4,6 +4,12 @@
     background-color: @dark;
   }
 }
+@keyframes bgChangeRed {
+  from {}
+  to {
+    background-color: @mainRed;
+  }
+}
 
 @keyframes bgChangeLighter {
   from {}
@@ -11,13 +17,31 @@
     background-color: lighten(@mainRed, 10%);
   }
 }
+
 @keyframes menuSlide {
   from {
     width: 1px;
   }
   to {
-    background-color: @mainRed;
+    background-color: @dark;
     width: 20rem;
+  }
+}
+
+@keyframes h1Reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes headerBgReveal {
+  from {}
+  to {
+    background-color: rgba(43, 40, 40, 0.438);
+    opacity: 1;
   }
 }
 

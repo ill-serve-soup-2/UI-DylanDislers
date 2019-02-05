@@ -1,19 +1,20 @@
 class MenuToggle {
   constructor(element) {
     this.element = element;
-    this.toggle = this.element.querySelector('.menuToggle')
-    this.closeMenu = this.element.querySelector('.close')
-    this.navMenu = this.element.querySelector('.navMenu')
-    this.toggle.addEventListener('click', () => this.popUp())
-    this.closeMenu.addEventListener('click', () => this.close())
+    this.toggle = this.element.querySelector('.menuToggle');
+    this.closeMenu = this.element.querySelector('.close');
+    this.navMenu = this.element.querySelector('.navMenu');
+    this.toggle.addEventListener('click', () => this.popUp());
+    this.closeMenu.addEventListener('click', () => this.close());
   }
   popUp() {
     this.navMenu.classList.toggle('menuReveal')
     this.toggle.style.display = 'none';
-    
+    const head = document.getElementById('header');
+    head.classList.remove('headerBgReveal');
   }
   close() {
-    this.navMenu.classList.toggle('menuReveal')
+    this.navMenu.classList.toggle('menuReveal');
     this.toggle.style.display = 'flex';
   }
 }
@@ -25,9 +26,11 @@ new MenuToggle(menu);
 
 
 document.addEventListener('scroll', e => {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
     document.querySelector('h1').classList.add('headerReveal')
+    document.querySelector('#header').classList.add('headerBgReveal')
   } else {
     document.querySelector('h1').classList.remove('headerReveal')
+    document.querySelector('#header').classList.remove('headerBgReveal')
   }
 });

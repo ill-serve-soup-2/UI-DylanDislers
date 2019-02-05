@@ -2,6 +2,7 @@
   width: 100%;
   position: fixed;
   .customFlex(space-between, flex-start, row);
+  z-index: 10;
 
   h1 {
     opacity: 0;
@@ -53,8 +54,10 @@
 
 .navMenu {
   display: none;
-  background-color: @mainRed;
   z-index: 10;
+  position: absolute;
+  right: 1rem;
+  top: 0;
   border-radius: 3px;
 
   li {
@@ -62,7 +65,7 @@
     padding: 1.5rem 1.5rem 2rem 1.5rem;
     width: 80%;
     cursor: pointer;
-    border-bottom: 1px solid @dark;
+    border-bottom: 1px solid @mainRed;
     .flexCenter;
 
     &:last-child {
@@ -71,7 +74,7 @@
 
     &:hover {
       border-radius: 3px;
-      animation-name: bgChangeDarker;
+      animation-name: bgChangeRed;
       animation-duration: .5s;
       animation-fill-mode: forwards;
     }
@@ -105,6 +108,14 @@
 
 #header {
   .headerReveal {
-    opacity: 1;
+    animation-name: h1Reveal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
+}
+
+.headerBgReveal {
+  animation-name: headerBgReveal;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
