@@ -11,7 +11,6 @@ class MenuToggle {
     this.navMenu.classList.toggle('menuReveal')
     this.toggle.style.display = 'none';
     const head = document.getElementById('header');
-    head.classList.remove('headerBgReveal');
   }
   close() {
     this.navMenu.classList.toggle('menuReveal');

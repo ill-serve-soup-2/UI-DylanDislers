@@ -269,9 +269,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-.navMenu li:last-child {
-  border-bottom: none;
-}
 .navMenu li:hover {
   border-radius: 3px;
   animation-name: bgChangeRed;
