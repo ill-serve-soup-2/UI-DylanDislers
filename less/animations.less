@@ -11,11 +11,16 @@
     background-color: lighten(@mainRed, 10%);
   }
 }
-
-@keyframes textChangeRed {
-  from {}
+@keyframes menuSlide {
+  from {
+    width: 1px;
+  }
   to {
-    text-decoration: underline;
+    background-color: @mainRed;
+    width: 20rem;
   }
 }
+
+
+
 

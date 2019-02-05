@@ -8,13 +8,12 @@ class MenuToggle {
     this.closeMenu.addEventListener('click', () => this.close())
   }
   popUp() {
-    this.navMenu.classList.toggle('reveal')
+    this.navMenu.classList.toggle('menuReveal')
     this.toggle.style.display = 'none';
-    TweenMax.to('.navMenu', 1, {right:'100px'})
     
   }
   close() {
-    this.navMenu.classList.toggle('reveal')
+    this.navMenu.classList.toggle('menuReveal')
     this.toggle.style.display = 'flex';
   }
 }
@@ -22,5 +21,13 @@ class MenuToggle {
 
 
 const menu = document.querySelector('#nav');
-
 new MenuToggle(menu);
+
+
+document.addEventListener('scroll', e => {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.querySelector('h1').classList.add('headerReveal')
+  } else {
+    document.querySelector('h1').classList.remove('headerReveal')
+  }
+});

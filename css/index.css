@@ -27,9 +27,13 @@
     background-color: #f38879;
   }
 }
-@keyframes textChangeRed {
+@keyframes menuSlide {
+  from {
+    width: 1px;
+  }
   to {
-    text-decoration: underline;
+    background-color: #EF5E4A;
+    width: 20rem;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -191,6 +195,7 @@ html {
 #header nav {
   margin: 1rem;
   z-index: 10;
+  position: relative;
 }
 #header nav .special {
   display: flex;
@@ -229,12 +234,16 @@ html {
 }
 .navMenu li {
   margin: 1rem auto 2rem auto;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
   width: 80%;
   cursor: pointer;
+  border-bottom: 1px solid #2e3842;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.navMenu li:last-child {
+  border-bottom: none;
 }
 .navMenu li:hover {
   border-radius: 3px;
@@ -251,15 +260,22 @@ html {
   letter-spacing: 2px;
   color: #fcfcfc;
   margin: 0 auto;
+  white-space: nowrap;
 }
 .navMenu .close {
   cursor: pointer;
   margin: 1rem;
   text-align: right;
 }
-.reveal {
-  width: 20rem;
+.menuReveal {
   display: block;
+  overflow: hidden;
+  animation-name: menuSlide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+#header .headerReveal {
+  opacity: 1;
 }
 #banner {
   z-index: 1;
