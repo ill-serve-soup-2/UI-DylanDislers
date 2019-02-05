@@ -53,7 +53,8 @@
 .navMenu {
   display: none;
   background-color: @mainRed;
-  width: 30rem;
+  z-index: 10;
+  border-radius: 3px;
 
   li {
     margin: 1rem auto 2rem auto;
@@ -83,10 +84,11 @@
   .close {
     cursor: pointer;
     margin: 1rem;
-
+    text-align: right;
   }
 }
 
 .reveal {
+  width: 20rem;
   display: block;
 }

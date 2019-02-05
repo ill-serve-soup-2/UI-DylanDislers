@@ -5,6 +5,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.5)), url(/img/produce2.jpeg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   .customFlex(space-around, center, column);
 
   .inner {
@@ -51,7 +53,7 @@
     text-transform: uppercase;
     border: none;
     bottom: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     height: 8.5em;
     left: 50%;
     letter-spacing: 0.225rem;
@@ -79,9 +81,7 @@
       width: 1.5em;
     }
     &:hover {
-      animation-name: hoverChangeLighter;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+      text-decoration: underline;
     }
   }
 }

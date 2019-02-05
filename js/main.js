@@ -10,6 +10,8 @@ class MenuToggle {
   popUp() {
     this.navMenu.classList.toggle('reveal')
     this.toggle.style.display = 'none';
+    TweenMax.to('.navMenu', 1, {right:'100px'})
+    
   }
   close() {
     this.navMenu.classList.toggle('reveal')
