@@ -10,7 +10,6 @@ class MenuToggle {
   popUp() {
     this.navMenu.classList.toggle('menuReveal')
     this.toggle.style.display = 'none';
-    const head = document.getElementById('header');
   }
   close() {
     this.navMenu.classList.toggle('menuReveal');
