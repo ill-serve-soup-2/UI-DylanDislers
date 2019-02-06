@@ -1,0 +1,45 @@
+//flexbox
+.customFlex(@jc,@ai,@direction) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @direction;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//text decoration
+.textNormalize {
+  text-decoration: none;
+  color: #000;
+}
+
+//font style
+.header2 {
+  color: @mainWhite;
+  font-size: 3rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+}
+
+//buttons
+.mainButton(@bg, @color) {
+  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: @bg;
+  color: @color;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Open Sans, Arial, Helvetica;
+}

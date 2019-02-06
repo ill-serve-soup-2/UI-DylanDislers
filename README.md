@@ -1,5 +1,4 @@
 # illservesoup2
-User Interface
 
 Pitch: A simple soup kitchen management software that allows inventory tracking and easy user sign up. 
 
