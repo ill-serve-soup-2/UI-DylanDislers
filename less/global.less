@@ -64,4 +64,18 @@ html {
   h2 {
     padding-bottom: 5rem;
   }
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+.button {
+  .mainButton(@mainRed, @mainWhite);
+  &:hover {
+    animation-name: bgChangeLighter;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+  }
 }

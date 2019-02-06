@@ -132,8 +132,8 @@
   width: 90rem;
 }
 .navMenu li {
-  margin: 1rem auto 2rem auto;
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  margin: 1rem auto;
+  padding: 1.5rem;
   width: 80%;
   cursor: pointer;
   display: flex;
@@ -151,7 +151,7 @@
   color: #000;
   font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.8rem;
-  padding: 1rem;
+  padding: 0.5rem;
   letter-spacing: 2px;
   color: #fcfcfc;
   margin: 0 auto;
@@ -240,24 +240,6 @@
   animation-name: opacityReveal;
   animation-duration: 5s;
   animation-fill-mode: initial;
-}
-#banner .button {
-  padding: 1.5rem 4rem;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background-color: #EF5E4A;
-  color: #fcfcfc;
-  border-radius: 3px;
-  text-decoration: none;
-  font-family: Open Sans, Arial, Helvetica;
-}
-#banner .button:hover {
-  animation-name: bgChangeLighter;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  z-index: 2;
 }
 #banner .spacer {
   width: 100%;
@@ -459,6 +441,15 @@
   text-align: center;
   margin: 0 auto;
 }
+.volunteerSection .major {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.volunteerSection .sectionImg {
+  margin-top: 2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -601,4 +592,25 @@ html {
 }
 .wrapper h2 {
   padding-bottom: 5rem;
+}
+.wrapper p {
+  line-height: 1.5;
+}
+.button {
+  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #EF5E4A;
+  color: #fcfcfc;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Open Sans, Arial, Helvetica;
+}
+.button:hover {
+  animation-name: bgChangeLighter;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 2;
 }
