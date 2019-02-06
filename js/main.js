@@ -32,3 +32,4 @@ document.addEventListener('scroll', e => {
     document.querySelector('#header').classList.remove('headerBgReveal')
   }
 });
+
