@@ -55,6 +55,167 @@
     opacity: 1;
   }
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.button {
+  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #EF5E4A;
+  color: #fcfcfc;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Open Sans, Arial, Helvetica;
+}
+.button:hover {
+  animation-name: bgChangeLighter;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+footer {
+  font-size: 1.2rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  background-color: #2e3842;
+  color: #fcfcfc;
+  padding: 1rem;
+}
 #header {
   width: 100%;
   position: fixed;
@@ -460,177 +621,19 @@
 .volunteerSection .sectionImg {
   margin-top: 2rem;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.aboutTheTeam .teamNames {
+  margin-top: 5rem;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-.wrapper {
-  padding-top: 6rem;
-  padding-bottom: 8rem;
-  z-index: 0;
-}
-.wrapper h2 {
-  padding-bottom: 5rem;
-}
-.wrapper p {
-  line-height: 1.5;
-}
-.button {
-  padding: 1.5rem 4rem;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.aboutTheTeam .teamNames p {
   background-color: #EF5E4A;
-  color: #fcfcfc;
+  text-align: left;
   border-radius: 3px;
-  text-decoration: none;
-  font-family: Open Sans, Arial, Helvetica;
 }
-.button:hover {
-  animation-name: bgChangeLighter;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  z-index: 2;
+.aboutTheTeam span {
+  color: #2e3842;
 }
-footer {
-  font-size: 1.2rem;
-  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  text-align: center;
-  background-color: #2e3842;
-  color: #fcfcfc;
-  padding: 1rem;
+.teamNamesGH a {
+  color: #EF5E4A;
 }
 .wrapper {
   padding-top: 6rem;
