@@ -226,6 +226,11 @@
   animation-duration: 5s;
   animation-fill-mode: initial;
 }
+@media (min-width: 1400px) {
+  #banner h2 {
+    font-size: 5rem;
+  }
+}
 #banner p {
   color: #fcfcfc;
   font-size: 2rem;
@@ -262,7 +267,7 @@
   text-transform: uppercase;
   border: none;
   bottom: 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   letter-spacing: 0.225rem;
   opacity: 1;
   outline: 0;
@@ -334,7 +339,6 @@
 .style1 .sectionImg {
   width: 60%;
   margin: 0 auto;
-  padding-left: 4rem;
 }
 .style1 img {
   width: 100%;
@@ -391,6 +395,7 @@
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  border-radius: 10px;
 }
 .style3 {
   width: 100%;
@@ -417,6 +422,7 @@
   border-bottom: 1px solid #FDCEC6;
   max-width: 50rem;
   margin: 0 auto;
+  padding-bottom: 4rem;
 }
 .style3 p {
   font-size: 3rem;
@@ -433,6 +439,9 @@
   margin: 0 auto;
   color: #fcfcfc;
 }
+.style3 .button {
+  margin-top: 2rem;
+}
 .style3 .sectionImg {
   width: 60%;
   margin: 0 auto;
@@ -440,7 +449,7 @@
 .style3 img {
   width: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .volunteerSection .major {
   display: flex;
@@ -450,83 +459,6 @@
 }
 .volunteerSection .sectionImg {
   margin-top: 2rem;
-}
-.tabsection {
-  width: 70%;
-  margin: 45px auto;
-  display: flex;
-  border: 1px solid #EF5E4A;
-  box-shadow: 1px 1px 5px #EF5E4A;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.tabsection .box {
-  padding: 40px;
-}
-.tabsection .box .box-title {
-  font-size: 24px;
-  padding-bottom: 10px;
-  font-weight: bold;
-}
-.tabs {
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
-  width: 100%;
-}
-.tabs .tabs-items {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  background-color: #fcfcfc;
-}
-.tabs .tabs-item {
-  display: none;
-  background-color: #fcfcfc;
-  color: #2e3842;
-  width: 80%;
-  overflow: scroll;
-}
-.tabs .tabs-item .tabs-item-title {
-  font-size: 2.4rem;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-.tabs .tabs-item .tabs-item-description {
-  color: #2e3842;
-  font-size: 1.8rem;
-}
-.tabs .tabs-item-selected {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.tabs .tabs-links {
-  display: flex;
-  background-color: #EF5E4A;
-  overflow: scroll;
-}
-.tabs .tabs-link {
-  padding: 20px 25px;
-  font-size: 24px;
-  background-color: #EF5E4A;
-  border-right: 1px solid #fcfcfc;
-  color: #fcfcfc;
-  cursor: pointer;
-}
-.tabs .tabs-link:hover {
-  background-color: #FDCEC6;
-}
-.tabs .tabs-link-selected {
-  z-index: 2;
-  border-right: 1px solid #EF5E4A;
-  background-color: #fcfcfc;
-  color: black;
-}
-.tabs .tabs-link-selected:hover {
-  background-color: #fcfcfc;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -669,7 +601,7 @@ html {
   z-index: 0;
 }
 .wrapper h2 {
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 .wrapper p {
   line-height: 1.5;
@@ -699,4 +631,22 @@ footer {
   background-color: #2e3842;
   color: #fcfcfc;
   padding: 1rem;
+}
+.wrapper {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  z-index: 0;
+}
+.wrapper .major {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper h2 {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+}
+.wrapper p {
+  line-height: 1.5;
 }
