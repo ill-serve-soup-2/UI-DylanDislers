@@ -450,6 +450,71 @@
 .volunteerSection .sectionImg {
   margin-top: 2rem;
 }
+.tabsection {
+  width: 70%;
+  margin: 45px auto;
+  display: flex;
+  border: 1px solid #EF5E4A;
+  box-shadow: 1px 1px 5px #EF5E4A;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tabsection .box {
+  padding: 40px;
+}
+.tabsection .box .box-title {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.tabs {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+  background-color: #fcfcfc;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #EF5E4A;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #EF5E4A;
+  border-right: 1px solid #fcfcfc;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #FDCEC6;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #EF5E4A;
+  background-color: #fcfcfc;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: #fcfcfc;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -591,7 +656,7 @@ html {
   z-index: 0;
 }
 .wrapper h2 {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 .wrapper p {
   line-height: 1.5;
