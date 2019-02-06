@@ -334,6 +334,7 @@
 .style1 .sectionImg {
   width: 60%;
   margin: 0 auto;
+  padding-left: 4rem;
 }
 .style1 img {
   width: 100%;
@@ -476,24 +477,36 @@
   height: 300px;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 1rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #fcfcfc;
 }
 .tabs .tabs-item {
   display: none;
   background-color: #fcfcfc;
-  width: 75%;
+  color: #2e3842;
+  width: 80%;
+  overflow: scroll;
 }
 .tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   padding-bottom: 10px;
 }
+.tabs .tabs-item .tabs-item-description {
+  color: #2e3842;
+  font-size: 1.8rem;
+}
 .tabs .tabs-item-selected {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .tabs .tabs-links {
   display: flex;
   background-color: #EF5E4A;
+  overflow: scroll;
 }
 .tabs .tabs-link {
   padding: 20px 25px;
@@ -678,4 +691,12 @@ html {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   z-index: 2;
+}
+footer {
+  font-size: 1.2rem;
+  font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  background-color: #2e3842;
+  color: #fcfcfc;
+  padding: 1rem;
 }
