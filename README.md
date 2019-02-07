@@ -1,5 +1,9 @@
 # illservesoup2
 
+This is the static marketing page for the app. Clone and open index.html into browser.
+
+***
+
 Pitch: A simple soup kitchen management software that allows inventory tracking and easy user sign up. 
 
 MVP: Users can login and view their inventory for their soup kitchen. User can create, read, update and delete items in their inventory. 
